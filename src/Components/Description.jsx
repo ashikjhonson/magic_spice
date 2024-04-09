@@ -5,29 +5,29 @@ import gift from "../Assets/Images/paneer.jpg";
 
 const Description = () => {
   return (
-    <div className="grid sm:grid-flow-row md:grid-cols-2 mx-16 mt-20 mb-10 ">
-      <div className="flex flex-col pl-16 pt-10">
-        <h1 className="text-4xl font-semibold border-l-[7px] my-3 pl-3 border-blue-700">
+    <div className="grid sm:grid-flow-row md:grid-cols-2 mx-16 mt-20 sm:mb-10 gap-10 sm:gap-0 ">
+      <div className="flex flex-col sm:pl-16 sm:pt-10">
+        <h1 className="text-3xl md:text-4xl font-semibold border-l-[7px] my-3 pl-3 border-blue-700">
           We Have trusted
         </h1>
         <span className="text-blue-700 font-medium text-3xl pl-5">
           Since 1956
         </span>
-        <div className="flex gap-20">
-          <div className="flex gap-5 items-center mt-10">
-            <img src={c_icon} alt="Image" height={50} width={70} />
+        <div className="flex gap-10 sm:gap-20 mt-7 sm:mt-0">
+          <div className="flex sm:gap-5 items-center sm:mt-10">
+            <img src={c_icon} alt="Image" className="h-12" />
             <div>
-              <p className="text-3xl text-blue-700 font-medium">100+</p>
-              <span className="text-gray-500 flex-col-reverse font-normal">
-                Clients
-              </span>
+              <p className="text-lg sm:text-3xl text-blue-700 font-medium">
+                100+
+              </p>
+              <span className="text-gray-500  font-normal">Clients</span>
             </div>
           </div>
-          <div className="flex gap-5 items-center mt-10">
-            <img src={e_icon} alt="Image" height={50} width={70} />
+          <div className="flex sm:gap-5 items-center sm:mt-10">
+            <img src={e_icon} alt="Image" className="h-12" />
             <div>
-              <p className="text-3xl text-blue-700 font-medium">7 Tons +</p>
-              <span className="text-gray-500 flex-col-reverse font-normal">
+              <p className=" sm:text-3xl text-blue-700 font-medium">7 Tons +</p>
+              <span className="text-gray-500 font-normal whitespace-nowrap">
                 Spices Exported
               </span>
             </div>
@@ -49,7 +49,7 @@ const Description = () => {
         </div>
         <div className="">
           <img src={gift} alt="Image" className="h-44" />
-          {/* Add gift image here */}
+          {/* Replace gift image here */}
         </div>
       </div>
     </div>
