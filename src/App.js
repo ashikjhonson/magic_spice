@@ -6,7 +6,7 @@ import Blog from "./Components/Blog";
 import About from "./Components/About";
 import Feedback from "./Components/Feedback";
 import Description from "./Components/Description";
-import ho from "./Assets/home.module.css";
+import Footer from "./Components/Footer";
 
 function Home() {
   return (
@@ -18,6 +18,7 @@ function Home() {
       <Blog />
       <About />
       <Feedback />
+      <Footer />
     </div>
   );
 }
