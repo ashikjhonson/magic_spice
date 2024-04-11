@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
         </div>
         <hr className="mx-5" />
-        <div className="px-4 py-6 text-whitemd:flex md:items-center md:justify-between  ">
+        <div className="px-4 py-6 text-white md:flex md:items-center md:justify-between  ">
           <div>
             <h1 className="text-xl font-bold">the MAGIC SPICE</h1>
             <span className="text-sm -center ">
