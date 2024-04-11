@@ -15,15 +15,15 @@ function Home() {
   return (
     <div>
       <Navi />
-      {/* <Client />
+      <Client />
       <Description />
       <Product />
       <Blog />
       <About />
-      <Feedback /> */}
-      <Order />
+      <Feedback />
+      {/* <Order />
       <Delivery />
-      <Address />
+      <Address /> */}
 
       <Footer />
     </div>
