@@ -10,6 +10,7 @@ import Footer from "./Components/Footer";
 import Address from "./Components/order components/Address";
 import Delivery from "./Components/order components/Delivery";
 import Order from "./Components/order components/Order";
+import Cart from "./Components/cart components/Cart";
 
 function Home() {
   return (
@@ -21,10 +22,10 @@ function Home() {
       <Blog />
       <About />
       <Feedback />
-      {/* <Order />
+      <Cart />
+      <Order />
       <Delivery />
-      <Address /> */}
-
+      <Address />
       <Footer />
     </div>
   );

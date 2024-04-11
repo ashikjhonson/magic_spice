@@ -1,7 +1,38 @@
 import React from "react";
 import razor from "../../Assets/Images/icons/razor.png";
+import Item from "../order components/Items";
 
 const Order = () => {
+  const items = [
+    {
+      id: 1,
+      name: "Black Clove",
+      inStock: true,
+      quantity: 1,
+      unitPrice: 25,
+    },
+    {
+      id: 2,
+      name: "Cinnamon",
+      inStock: true,
+      quantity: 2,
+      unitPrice: 45,
+    },
+    {
+      id: 3,
+      name: "Turmeric",
+      inStock: true,
+      quantity: 3,
+      unitPrice: 25,
+    },
+    {
+      id: 4,
+      name: "Nutmeg",
+      inStock: true,
+      quantity: 1,
+      unitPrice: 25,
+    },
+  ];
   return (
     <div>
       <h1 className="text-center">Order Confirmation</h1>
@@ -17,80 +48,17 @@ const Order = () => {
               <div class="px-4 py-6 sm:px-8 sm:py-10">
                 <div class="flow-root">
                   <ul class="-my-8">
-                    <li class="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
-                      <div class="shrink-0 relative">
-                        <img
-                          class="h-24 w-24 max-w-full rounded-lg object-cover"
-                          src="https://images.unsplash.com/photo-1588484628369-dd7a85bfdc38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNuZWFrZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=150&q=60"
-                          alt=""
+                    {items.map((item) => {
+                      return (
+                        <Item
+                          key={item.id}
+                          name={item.name}
+                          inStock={item.inStock}
+                          quantity={item.quantity}
+                          unitPrice={item.unitPrice}
                         />
-                      </div>
-
-                      <div class="relative flex flex-1 flex-col justify-between">
-                        <div class="sm:col-gap-5 sm:grid sm:grid-cols-2">
-                          <div class="pr-8 sm:pr-5">
-                            <p class="text-base font-semibold text-gray-900">
-                              Black Clove
-                            </p>
-                            <p class="mx-0 mt-1 mb-0 text-sm text-gray-400">
-                              In Stock | 1KG
-                            </p>
-                          </div>
-
-                          <div class="mt-4 flex items-end justify-between sm:mt-0 sm:items-start sm:justify-end">
-                            <p class="shrink-0 w-20 text-base font-semibold text-gray-900 sm:order-2 sm:ml-8 sm:text-right">
-                              $25.00
-                            </p>
-                          </div>
-                        </div>
-
-                        <div class="absolute top-0 right-0 flex sm:bottom-0 sm:top-auto">
-                          <button
-                            type="button"
-                            class="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out focus:shadow hover:text-gray-900"
-                          >
-                            Qty: 1
-                          </button>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0">
-                      <div class="shrink-0 relative">
-                        <img
-                          class="h-24 w-24 max-w-full rounded-lg object-cover"
-                          src="https://images.unsplash.com/photo-1588484628369-dd7a85bfdc38?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNuZWFrZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=150&q=60"
-                          alt=""
-                        />
-                      </div>
-
-                      <div class="relative flex flex-1 flex-col justify-between">
-                        <div class="sm:col-gap-5 sm:grid sm:grid-cols-2">
-                          <div class="pr-8 sm:pr-5">
-                            <p class="text-base font-semibold text-gray-900">
-                              Black Clove
-                            </p>
-                            <p class="mx-0 mt-1 mb-0 text-sm text-gray-400">
-                              In Stock | 1KG
-                            </p>
-                          </div>
-
-                          <div class="mt-4 flex items-end justify-between sm:mt-0 sm:items-start sm:justify-end">
-                            <p class="shrink-0 w-20 text-base font-semibold text-gray-900 sm:order-2 sm:ml-8 sm:text-right">
-                              $25.00
-                            </p>
-                          </div>
-                        </div>
-
-                        <div class="absolute top-0 right-0 flex sm:bottom-0 sm:top-auto">
-                          <button
-                            type="button"
-                            class="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out focus:shadow hover:text-gray-900"
-                          >
-                            Qty: 1
-                          </button>
-                        </div>
-                      </div>
-                    </li>
+                      );
+                    })}
                   </ul>
                 </div>
 
